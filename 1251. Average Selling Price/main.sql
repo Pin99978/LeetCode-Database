@@ -1,5 +1,12 @@
 -- Write your MySQL query statement below
 
+--hint
+--1. Use WITH AS ()
+--Practice with WITH AS CTE method , we can simplify the problem by seperate Aggregate function step
+--2. COLALESE() & NULLIF() "NULL" condition 
+
+
+
 WITH Sales AS(
     SELECT u.product_id ,  u.units , p.price , (u.units * p.price) AS total_sales
     FROM UnitsSold u
