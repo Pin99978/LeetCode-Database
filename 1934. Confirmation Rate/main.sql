@@ -3,7 +3,7 @@
 -- `SUM(CASE WHEN condition THEN 1 ELSE 0 END) / COUNT(*)`
 -- CASE WHEN for  numerator with condition 
 -- COALESCE() to deal with NULL result 
--- NULLIF()   to division 0 handling 
+-- NULLIF()   to divide 0 handling 
 
 --- Optimize Version with `SUM(CASE WHEN condition THEN 1 ELSE 0 END) / COUNT(*)`
 SELECT 
